@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/main.js" type="module" defer></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              spacing:{
+                header_lg: '650px',
+                gap_lg: '500px'
+              }
+            }
+          }
+        }
+      </script>
+    <title>ACME - FILMES</title>
+</head>
+<body class="bg-black text-white">
+    <header class="flex flex-row justify-center gap-x-gap_lg pt-10">
+        <div class="flex flex-row">
+        <img class="" src="./img/icons/logo.svg" alt="logoAcmeFilmes">
+        </div>
+
+        <div class="">
+        <input  class="w-header_lg h-10 rounded-lg" type="text" name="" placeholder="Procure um filme" id="bucasFilme">
+        </div>
+
+        <div class="">
+            <a href="#">
+                <img src="./img/icons/user.svg" alt="userIcon">
+            </a>
+        </div>
+
+    </header>
+    <main >
+        <div id="div" class=""></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
