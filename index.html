@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME - FILMES</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/main.js" type="module" defer></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              spacing:{
-                header_lg: '650px',
-                gap_lg: '500px'
-              }
-            }
-          }
+    <style>
+        /* Estilos personalizados */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
-      </script>
-    <title>ACME - FILMES</title>
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
 </head>
-<body class="bg-black text-white">
-    <header class="flex flex-row justify-center gap-x-gap_lg pt-10">
-        <div class="flex flex-row">
-        <img class="" src="./img/icons/logo.svg" alt="logoAcmeFilmes">
-        </div>
 
-        <div class="">
-        <input  class="w-header_lg h-10 rounded-lg" type="text" name="" placeholder="Procure um filme" id="bucasFilme">
-        </div>
+<body class="bg-gray-900 text-gray-200 font-sans">
 
-        <div class="">
-            <a href="#">
-                <img src="./img/icons/user.svg" alt="userIcon">
+    <header class="bg-gray-800 shadow">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <img class="h-12" src="./img/icons/logo.svg" alt="Logo ACME Filmes">
+            <input class="border-2 border-gray-300 bg-gray-700 text-white rounded-lg py-2 px-4 w-64 focus:outline-none focus:border-blue-500"
+                type="text" placeholder="Procure um filme" id="buscaFilme">
+            <a href="#" class="ml-4">
+                <img src="./img/icons/user.svg" alt="Ícone do Usuário">
             </a>
         </div>
-
     </header>
-    <main >
-        <div id="div" class=""></div>
-    </main>
-    <footer>
 
+    <main class="bg-gray-800 py-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto text-center text-gray-400">
+           
+        </div>
     </footer>
+
 </body>
+
 </html>
