@@ -1,6 +1,6 @@
 'use strict'
 
-import {getFilmes, getFilme} from "./filmes.js"
+import {getFilmes, getFilme, postFilme} from "./filmes.js"
 
 
 function criarCard(filme){
@@ -54,4 +54,13 @@ async function preencherContainer(){
 
 
 preencherContainer()
-// criarCard()
+
+const filme ={
+    "nome": "Bastardos Inglórios",
+            "sinopse": "Em Bastardos Inglórios, na Segunda Guerra Mundial, a França está ocupada pelos nazistas. O tenente Aldo Raine (Brad Pitt) é o encarregado de reunir um pelotão de soldados de origem judaica, com o objetivo de realizar uma missão suicida contra os alemães. O objetivo é matar o maior número possível de nazistas, da forma mais cruel possível. Paralelamente Shosanna Dreyfuss (Mélanie Laurent) assiste a execução de sua família pelas mãos do coronel Hans Landa (Christoph Waltz), o que faz com que fuja para Paris. Lá ela se disfarça como operadora e dona de um cinema local, enquanto planeja um meio de se vingar.",
+            "duracao": "02:33:00",
+            "data_lancamento": "2009-10-09",
+            "data_relancamento": "2017-02-02",
+            "foto_capa": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/43/36/20096333.jpg",
+            "valor_unitario": 50
+}
