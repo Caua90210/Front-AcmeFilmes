@@ -27,3 +27,13 @@ export async function postFilme(filme){
     return response.ok
 }
 
+export async function deleteFilme(id){
+    const url = `http://localhost:8080/v2/acmefilmes/filme/${id}`
+    const options = {
+        methotd: 'DELETE'
+    }
+    const response = await fetch(url, options)
+    return response.ok
+}
+
+
