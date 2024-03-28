@@ -6,8 +6,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/main.js" defer></script>
     <title id=tittle_id></title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                azulClaro:'#374151'
+              },
+
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <div id="lista"></div>
+<body class="bg-azulClaro">
+     <header >
+        <nav class="flex  m-10 pl-10 text-white pb-14">
+            <img class="pr-28" src="../img/icons/logo.svg" alt="">
+            <div class="space-x-20 mt-2">
+                <a href="../index.html">INÍCIO</a>
+                <a href="#">ELENCO</a>
+                <a href="#">SOBRE</a>
+            </div>
+          
+        </nav>
+        
+     </header>   
+     <main>
+        <section class="flex px-40 space-x-60 text-white">
+             <img src="../img/image 1.png" alt="INTERESTELAR">   
+            <div class="flex flex-col items-center" id="sobre">
+                <h1 class="text-5xl mt-28">INTERESTELAR</h1>
+                <p class="text-2xl py-6">2014  |   2h49min</p>
+                <p class="px-20 text-2xl pb-10">Cooper lidera uma equipe de astronautas em busca de planetas habitáveis para salvar a humanidade da escassez de recursos na Terra, ciente de que pode nunca mais ver sua família. Ao lado de Brand, Jenkins e Doyle, eles partem em uma missão crucial.</p>
+                <h2 class="text-2xl">Alugar por:</h2>
+                <button class="bg-white text-black px-60 py-6 mt-4 rounded-lg text-5xl">R$39,99</button>
+            </div>
+        </section>
+
+     </main>
 </body>
 </html>

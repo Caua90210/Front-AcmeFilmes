@@ -44,7 +44,7 @@ function criarCard(filme){
 
 async function preencherContainer(){
 
-    const container = document.getElementById('lista')
+    const container = document.getElementById('sobre')
 
     const filmes = await getFilmes()
 
